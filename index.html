@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="pildid/logo.png" type="image/png">
+    <title>Evegantne Disain</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+
+    <div class="container">
+
+        <div class="logo">
+            <img src="pildid/logo.png" alt="">
+            <hr class="joon">
+        </div>
+        
+
+        <div class="peatekst">
+            <h6 class="text">🏡 Usaldusväärne abi sinu kodu heaks - pereettevõttelt, kes tõesti hoolib! ❤️</h6>
+            <img src="pildid/Union.png" alt="pilt" class="image">
+        </div>
+
+        <div class="algus">
+        <hr class="lõik">
+            <h6 class="sissejuhatus">Oleme väike pereettevõte, kelle südameasjaks on pakkuda kvaliteetset ja personaalset abi igas kodus. Olgu Sul vaja kiiret pisiremonti või on käsil suurem projekt - meie saame aidata. Meil on pikaaegne kogemus ja professionaalsed abilised, kes teevad tööd korralikult , kiiresti ja õige aegselt.</h6>
+        <hr class="lõpp">
+        </div>
+
+        <div class="teenused">
+            <h6 class="pealkiri">mida me pakume?</h6>
+            <div class="loetelu">
+                <ul>
+                    <li class="elekter">
+                        <h6>⚡Elektritööd</h6>
+                        <img src="pildid/elekter.png" alt="elektritööd">
+                        <h6 class="alumine">Alates lihtsast pirnivahetusest kuni keerukamate süsteemide rajamiseni</h6>
+                    </li>
+
+                    <li class="santehnika">
+                        <h6>🚰 Santehnilised tööd</h6>
+                        <img src="pildid/santehnika.png" alt="santehnilised_tööd">
+                        <h6 class="alumine">segistite, torude ja sanitaartehnika vahetus</h6>
+                    </li>
+
+                    <li class="siseviimistlus">
+                        <h6>🎨 Siseviimistlus</h6>
+                        <img src="pildid/siseviimistlus.png" alt="siseviimistlus">
+                        <h6 class="vähem">pahteldus, värvimine, tapeetimine</h6>
+                    </li>
+
+                    <li class="koristus">
+                        <h6>🧹 Kodukoristus</h6>
+                        <img src="pildid/kodukoristus.png" alt="kodukoristus">
+                        <h6 class="alumine">igapäevane hooldus või põhjalik suurpuhastus</h6>
+                    </li>
+
+                    <li class="korsten">
+                        <h6>🔥Korstnapühkimine ja küttekollete hooldus</h6>
+                        <img src="pildid/korsten.png" alt="korstnapühkimine">
+                        <h6 class="alumine">pisiremondid ja nõustamine</h6>
+                    </li>
+
+                    <li class="põrand">
+                        <h6>🪵 puitpõrandad</h6>
+                        <img src="pildid/põrand.png" alt="puitpõrandad">
+                        <h6 class="vähem">lihvimine, hooldus, laminaadi paigaldus</h6>
+                    </li>
+
+                    <li class="mööbel">
+                        <h6>♻️ taaskasutatud puidust mööbel</h6>
+                        <img src="pildid/mööbel.png" alt="puidust_mööbel">
+                        <h6 class="alumine">ainulaadsed käsitöötooted, mis loovad kodus soojust</h6>
+                    </li>
+
+                    <li class="lammutus">
+                        <h6>💥 lammutustööd</h6>
+                        <img src="pildid/lammutus.png" alt="lammutustööd">
+                        <h6 class="alumine">Täpsed ja kontrollitud lammutustööd igal objektil</h6>
+                    </li>
+                </ul>
+
+                    </div>
+
+                    <div class="cta-text">
+                    <h6 class="cta">Leia endale sobiv lahendus ja küsi pakkumist juba täna!</h6>
+                    <button class="open-modal"><span>küsi pakkumist</span></button>
+                    </div>
+                   
+
+               
+
+                  <div class="modal-overlay">
+                <div class="modal">
+                <button class="sulgemine">&times;</button>
+                
+                <input type="text" name="Nimi" placeholder="Nimi" required>
+                <input type="text" name="E-mail" placeholder= "E-mail" required>
+                <input type="tel" name="Telefon" placeholder="Kontakt tel.">
+                <select name="teema" id="teema" required>
+                    <option value="" disabled selected>Vali teenus</option>
+                    <option value="Elektritööd">⚡ Elektritööd</option>
+                    <option value="Santehnilised tööd">🚰 Santehnilised tööd</option>
+                    <option value="Siseviimistlus">🎨 Siseviimistlus</option>
+                    <option value="Kodukoristus">🧹 Kodukoristus</option>
+                    <option value="Korstnapühkimine/küttekolded">🔥 Korstnapühkimine ja küttekollete hooldus</option>
+                    <option value="Puit mööbel">♻️ Taaskasutatud puidust mööbel</option>
+                    <option value="Lammutustööd">💥 Lammutustööd</option>
+                    <option value="Muu">⋯ Muu</option>
+                </select>
+                <textarea name="Message" id="Message" placeholder="Sinu sõnum" rows="5" cols="40"></textarea>
+                
+                <button type="submit" class="submit">Saada päring</button>
+                </form>
+           
+                
+            </div>
+                </div>
+
+            </div>
+                <div class="tööd">
+                <hr class="lõpp">
+                    <div class="tööd-pealkiri">
+                <h6>Tehtud tööd</h6>
+                </div>
+
+                <div class="wrapper" data-category="küttekolded">
+                <h6 class="küttekolded">küttekolded</h6>
+                <span class="arrow left">&#10094;</span>
+            <img src="pildid/ahienne.png" alt="Pilt" class="frameGallery">
+            <span class="arrow right">&#10095;</span>
+        </div>
+
+
+        <div class="wrapper" data-category="viimistlus">
+            <h6 class="viimistlus">Siseviimistlus</h6>
+                    <span class="arrow left">&#10094;</span>
+            <img src="pildid/uks.png" alt="Pilt" class="frameGallery">
+            <span class="arrow right">&#10095;</span>
+        </div>
+                </div>
+
+                <div class="kontakt">
+                    <hr class="lõpp">
+                    <h6>Kui tekkis küsimusi, siis ära kõhkle ja võta meiega ühendust juba täna</h6>
+                    <div class="profiil">
+                    <img src="pildid/profiil.png" alt="profiilipilt">
+                    <div class="profiili-tekst">
+                    <h6>+372 56903592</h6>
+                    <h6>Eve Nurme</h6>
+                    <h6 class="firma">Relhos OÜ</h6>
+                    </div>                   
+                    </div>
+
+                        <div class="email">
+                        <h6>või kirjuta meile</h6>
+                        <h6 class="gmail">aivarnurme73@gmail.com</h6>
+
+                            </div>
+
+                </div>
+
+              <div class="viimane">
+                <hr class="lõpp">
+                <h6>Võid jätta meile ka enda andmed, et saaksime sinuga ise ühendust võtta</h6>
+
+
+                <div class="form">
+                <input type="text" name="Nimi" placeholder="Nimi" required>
+                <input type="text" name="E-mail" placeholder= "E-mail" required>
+                <input type="tel" name="Telefon" placeholder="Kontakt tel.">
+                <select name="teema" id="teema" required>
+                    <option value="" disabled selected>Vali teenus</option>
+                    <option value="Elektritööd">⚡ Elektritööd</option>
+                    <option value="Santehnilised tööd">🚰 Santehnilised tööd</option>
+                    <option value="Siseviimistlus">🎨 Siseviimistlus</option>
+                    <option value="Kodukoristus">🧹 Kodukoristus</option>
+                    <option value="Korstnapühkimine/küttekolded">🔥 Korstnapühkimine ja küttekollete hooldus</option>
+                    <option value="Puit mööbel">♻️ Taaskasutatud puidust mööbel</option>
+                    <option value="Lammutustööd">💥 Lammutustööd</option>
+                    <option value="Muu">⋯ Muu</option>
+                </select>
+                <textarea name="Message" id="Message" placeholder="Sinu sõnum" rows="5" cols="40"></textarea>
+                
+                <button type="submit" class="päring">Saada päring</button>
+              </div>
+       </div>
+
+
+       <footer>
+        <hr class="esimene">
+        <p>Copyright © 2025 KoodiOrav - All Rights Reserved.</p>
+        <hr class="teine">
+       </footer>
+
+
+
+
+
+
+    </div>
+
+     <script src="index.js"></script>
+   </body>
+</html>
