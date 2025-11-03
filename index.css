@@ -324,68 +324,63 @@ select:focus{
 #pilt{
     display: none;
 }
-.kontakt .lõpp{
-    margin-top: 45px;
-    width: 100%;
-    background-color: #2E8B57;
-    border: none;
-    height: 3px;  
-}
-.kontakt h6{
-    color: white;
-    font-size: 20px;
-    font-weight: 600;
-    text-transform: uppercase;
-    width: 80%;
-    margin: 20px auto;
-}
-.profiil img{
-    height: 170px;
-    width: 150px;
-    margin-left: 15px;
-    margin-top: 25px;
-}
-.profiil{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.profiili-tekst{
+
+.kaart-info{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    margin-top: 50px;
+    justify-content: center;
 }
-.profiili-tekst h6{
-    width: 100%;
-    margin: 0px 0px;
-    color: #FFFFFF;
-    font-size: 15px;
+.kaart img{
+    text-align: left;
+    width: 120px;
 }
-.profiili-tekst .firma{
-    margin-top: 45px;
+.kaart {
+    margin: 5px auto;
+    text-align: left;
+  margin-top: 30px;
+  width: 300px;
+  height: 150px;
+  background: linear-gradient(175deg, #8B5E3C 50%, #5C4033 100%);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  display: flex;
+    align-items: center;
+  justify-content: center;
+  
 }
-.email{
+.tutvustus{
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
     text-align: center;
+    color: white;
 }
-.email .gmail{
-    text-transform: lowercase;
-}
-.viimane .lõpp{
-    margin-top: 20px;
+.tutvustus .lõpp{
+    margin-bottom: 20px;
     width: 100%;
     background-color: #2E8B57;
     border: none;
     height: 3px; 
 }
-.viimane h6{
-    width: 90%;
-    margin: 20px auto;
-    text-transform: uppercase;
-    text-align: center;
-    color: #FFFFFF;
+.kaart h6,
+.kaart p {
+  margin: 3px 3px;
+  color: wheat;
+  font-size: 14px;
+}
+.kaart .email a{
+    font-size: 13px;
+}
+.kaart-info a {
+  color: white;
+  text-decoration: none;
+}
+.kaart-info .firma{
     font-weight: 600;
-    font-size: 20px;
+}
+.kaart-info a:hover {
+  text-decoration: underline;
 }
 .form{
     justify-content: center;
@@ -451,6 +446,13 @@ footer p{
     text-align: center;
     font-size: 10px;
 }
+.kontakt-sektsioon {
+    display: flex;
+    flex-direction: column; /* alguses üksteise all */
+    gap: 20px; /* vahe kaardi ja vormi vahel */
+    align-items: center;
+    margin: 0 auto;
+}
 @media (min-width: 375px){
     .peatekst .text{
         text-align: center;
@@ -476,11 +478,33 @@ footer p{
     .kontakt h6{
         text-align: center;
     }
+    .form{
+        margin: 20px auto;
+        width: 75%;
+    }
+    .kontakt-sektsioon {
+        flex-direction: row;
+        justify-content: center; 
+        align-items: center;
+        gap: 20px;
+    }
+
+    .kaart, .form {
+        width: 300px; 
+    }
+
 }
 @media (min-width:768px){
     .peatekst .text{
         width: 60%;
         text-align: center; 
-    } 
+    }
+    .form{
+        width: 60%;
+    }
 }
-
+@media (min-width:1024px){
+    .form{
+        width: 50%;
+    }
+}

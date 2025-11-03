@@ -27,6 +27,7 @@
             <img src="pildid/Union.png" alt="pilt" class="image">
         </div>
 
+
         <div class="algus">
         <hr class="lõik">
             <h6 class="sissejuhatus">Oleme väike pereettevõte, kelle südameasjaks on pakkuda kvaliteetset ja personaalset abi igas kodus. Olgu Sul vaja kiiret pisiremonti või on käsil suurem projekt - meie saame aidata. Meil on pikaaegne kogemus ja professionaalsed abilised, kes teevad tööd korralikult , kiiresti ja õige aegselt.</h6>
@@ -99,7 +100,7 @@
                   <div class="modal-overlay">
                 <div class="modal">
                 <button class="sulgemine">&times;</button>
-                
+                <form action="sendmail.php" method="post">
                 <input type="text" name="Nimi" placeholder="Nimi" required>
                 <input type="text" name="E-mail" placeholder= "E-mail" required>
                 <input type="tel" name="Telefon" placeholder="Kontakt tel.">
@@ -146,34 +147,30 @@
         </div>
                 </div>
 
-                <div class="kontakt">
+                
+                <div class="tutvustus">
                     <hr class="lõpp">
                     <h6>Kui tekkis küsimusi, siis ära kõhkle ja võta meiega ühendust juba täna</h6>
-                    <div class="profiil">
-                    <img src="pildid/profiil.png" alt="profiilipilt">
-                    <div class="profiili-tekst">
-                    <h6>+372 56903592</h6>
-                    <h6>Eve Nurme</h6>
-                    <h6 class="firma">Relhos OÜ</h6>
-                    </div>                   
                     </div>
-
-                        <div class="email">
-                        <h6>või kirjuta meile</h6>
-                        <h6 class="gmail">aivarnurme73@gmail.com</h6>
-
-                            </div>
-
+                    <div class="kontakt-sektsioon">
+               <div class="kaart">
+                <img src="pildid/profiil.png" alt="Profiilipilt" class="profiil-pilt">
+                
+            <div class="kaart-info">
+                <h6 class="nimi">Eve Nurme</h6>
+                <p class="telefon">📞 <a href="tel:+37256903592">+372 5690 3592</a></p>
+                <p class="email"><a href="mailto:aivarnurme73@gmail.com">aivarnurme73@gmail.com</a></p>
+                    <p class="firma">Relhos OÜ</p>
+                </div>
                 </div>
 
-              <div class="viimane">
-                <hr class="lõpp">
-                <h6>Võid jätta meile ka enda andmed, et saaksime sinuga ise ühendust võtta</h6>
 
-
+                
+                
                 <div class="form">
+                <form action="sendmail.php" method="post">
                 <input type="text" name="Nimi" placeholder="Nimi" required>
-                <input type="text" name="E-mail" placeholder= "E-mail" required>
+                <input type="email" name="E-mail" placeholder= "E-mail" required>
                 <input type="tel" name="Telefon" placeholder="Kontakt tel.">
                 <select name="teema" id="teema" required>
                     <option value="" disabled selected>Vali teenus</option>
@@ -189,9 +186,10 @@
                 <textarea name="Message" id="Message" placeholder="Sinu sõnum" rows="5" cols="40"></textarea>
                 
                 <button type="submit" class="päring">Saada päring</button>
-              </div>
-       </div>
-
+            </form>
+            </div>
+            </div>
+     
 
        <footer>
         <hr class="esimene">
